@@ -1,0 +1,11 @@
+{
+    "name": "factorio-mapper-mod",
+    "version": "0.1.0",
+    "title": "Factorio Mapper",
+    "author": "oof2win2",
+    "description": "Create pictures of your base with your headless client!",
+    "dependencies": [
+        "base >= 1.0.0"
+    ],
+    "factorio_version": "1.1"
+}

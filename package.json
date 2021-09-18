@@ -1,0 +1,22 @@
+{
+  "name": "factorio-mapper",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oof2win2/factorio-mapper.git"
+  },
+  "keywords": [],
+  "author": "oof2win2",
+  "bugs": {
+    "url": "https://github.com/oof2win2/factorio-mapper/issues"
+  },
+  "homepage": "https://github.com/oof2win2/factorio-mapper#readme",
+  "devDependencies": {
+    "@types/node": "^16.9.2"
+  }
+}
