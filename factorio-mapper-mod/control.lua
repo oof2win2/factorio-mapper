@@ -9,19 +9,21 @@ local function screenshot (opts)
 					local entity = surface.find_entities({left_top={x+0.5, y+0.5}, right_bottom={x+0.5, y+0.5}})[1]
 					table.insert(output, {
 						x=x+0.5, y=y+0.5,
-						tilename=tile and tile.name or "none",
-						entityname=entity and entity.name or "none"
+						-- tilename=tile and tile.name or "none",
+						tilecolor=tile and tile.prototype and tile.prototype.map_color or "none",
+						-- entityname=entity and entity.name or "none"
+						entitycolor=entity  and entity.prototype and entity.prototype.map_color or "none"
 					})
 				end
 			end
 		end
 	end
+	-- return rcon.print(game.table_to_json(output))
 	game.write_file("headless-screenshot.out", game.table_to_json(output), false)
 end
 
 commands.add_command("headless-screenshot", nil, screenshot)
 
-local interface = {
-	["item-tile-list"] = screenshot
-}
-
+-- local interface = {
+-- 	["item-tile-list"] = screenshot
+-- }
